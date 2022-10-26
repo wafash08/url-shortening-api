@@ -4,22 +4,40 @@ import styles from "./button.module.css";
 // type ButtonColors = "transparent" | "cyan";
 
 interface ButtonBaseProps {
-  hasBackground?: boolean;
+  mode?: string;
   children: React.ReactNode;
 }
 
 type ButtonProps = ButtonBaseProps &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
+const getButtonClassnames = (mode: string) => {
+  switch (mode) {
+    case "normal":
+      return "";
+
+    case "transparent":
+      return styles.transparent;
+
+    case "transparentWhite":
+      return styles.transparentWhite;
+    default:
+      break;
+  }
+};
+
 export default function Button({
-  hasBackground = true,
+  mode = "normal",
   type,
   children,
 }: ButtonProps) {
-  const handleHasBackground = hasBackground ? styles.btn : styles.transparent;
+  let buttonClassname = getButtonClassnames(mode);
 
   return (
-    <button type={type ?? "button"} className={handleHasBackground}>
+    <button
+      type={type ?? "button"}
+      className={`${styles.btn} ${buttonClassname}`}
+    >
       {children}
     </button>
   );

@@ -13,11 +13,13 @@ export default function Home() {
       </Head>
 
       <main>
-        <Button type="button">Hello World!</Button>
-        <Button type="button" hasBackground={false}>
-          Hello World!
+        <Button type="button">Get Started</Button>
+        <Button type="button" mode="transparent">
+          Get Started
         </Button>
-        <Button type="button">Hello World!</Button>
+        <Button type="button" mode="transparentWhite">
+          Get Started
+        </Button>
       </main>
     </div>
   );
