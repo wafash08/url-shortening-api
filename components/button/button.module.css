@@ -1,0 +1,29 @@
+.btn {
+  --_primary-bg-btn: hsl(180, 66%, 49%);
+  --_secondary-bg-btn: transparent;
+  --bg-color: var(--_primary-bg-btn);
+
+  --_primary-text-color: hsl(360, 100%, 100%);
+  --_secondary-text-color: hsl(257, 7%, 63%);
+  --text-color: var(--_primary-text-color);
+
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.transparent {
+  --bg-color: var(--_secondary-bg-btn);
+  --text-color: var(--_secondary-text-color);
+}
+
+.btn:hover {
+}
+
+.btn:focus {
+}
+
+.btn:focus-visible {
+}
+
+.btn:active {
+}
