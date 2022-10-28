@@ -1,0 +1,32 @@
+.hamburgerButton {
+  --bg-color: hsl(257, 7%, 63%);
+  background: transparent;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+
+  border-radius: 50%;
+
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  margin-inline-start: auto;
+  border: 0px;
+  cursor: pointer;
+
+  transition: outline-color 0.3s ease-in-out, outline-offset 0.3s ease-in-out;
+  outline-color: var(--bg-color);
+}
+
+.hamburgerButton:focus,
+.hamburgerButton:focus-visible {
+  outline-offset: 2px;
+}
+
+.hamburgerButton span {
+  width: 30px;
+  height: 3px;
+  background: var(--bg-color);
+  border-radius: 1px;
+}

@@ -21,7 +21,8 @@
   font-weight: 500;
   border: 1px solid var(--bg-color);
   border-radius: 99px;
-  padding: 0.7em 1.7em;
+  padding-inline: 1.7em;
+  padding-block: 0.7em;
   outline-color: var(--_primary-bg-color);
   outline-width: 2px;
   outline-offset: var(--outline-offset);
