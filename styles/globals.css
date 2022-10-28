@@ -2,9 +2,13 @@
 
 html,
 body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -12,8 +16,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+ul {
+  list-style: none;
 }
 
 .container {
@@ -26,4 +30,11 @@ a {
 .inner-header {
   display: flex;
   align-items: center;
+
+  /* sementara */
+  position: relative;
+}
+
+header {
+  margin-block: 2.25rem;
 }

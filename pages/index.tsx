@@ -1,3 +1,4 @@
+import * as React from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -5,6 +6,8 @@ import HamburgerButton from "../components/hamburger-button/hamburger-button";
 import MobileMenu from "../components/mobile-menu/mobile-menu";
 
 export default function Home() {
+  const [isShow, setIsShow] = React.useState<boolean>(false);
+  const handleShowMobileMenu = () => {};
   return (
     <div>
       <Head>
