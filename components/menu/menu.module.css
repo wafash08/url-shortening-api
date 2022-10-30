@@ -1,0 +1,44 @@
+.menu {
+  background: hsl(257, 27%, 26%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 450px;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.nav {
+  border: 0px solid hsl(257, 7%, 63%);
+  border-bottom-width: 1px;
+  padding-block: 2rem;
+  width: 100%;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.buttonsWrapper {
+  margin-block: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}

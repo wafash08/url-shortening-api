@@ -5,10 +5,10 @@ import styles from "./button.module.css";
 
 interface ButtonBaseProps {
   mode?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
-type ButtonProps = ButtonBaseProps &
+export type ButtonProps = ButtonBaseProps &
   React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const getButtonClassnames = (mode: string) => {

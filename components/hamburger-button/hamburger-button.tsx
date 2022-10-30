@@ -1,8 +1,13 @@
+import { ButtonProps } from "../button/button";
 import styles from "./hamburgerButton.module.css";
 
-export default function HamburgerButton() {
+export default function HamburgerButton({ onClick }: ButtonProps) {
   return (
-    <button className={styles.hamburgerButton} aria-label="Menu Navigation">
+    <button
+      onClick={onClick}
+      className={styles.hamburgerButton}
+      aria-label="Menu Navigation"
+    >
       <span></span>
       <span></span>
       <span></span>

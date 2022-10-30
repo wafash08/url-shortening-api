@@ -30,3 +30,9 @@
   background: var(--bg-color);
   border-radius: 1px;
 }
+
+@media (min-width: 768px) {
+  .hamburgerButton {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+.menu {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navList {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: hsl(257, 7%, 63%);
+    transition: color 300ms ease-in-out;
+  }
+
+  .navLink:hover {
+    color: hsl(255, 11%, 22%);
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

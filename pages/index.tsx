@@ -3,11 +3,11 @@ import Head from "next/head";
 import Link from "next/link";
 
 import HamburgerButton from "../components/hamburger-button/hamburger-button";
-import MobileMenu from "../components/mobile-menu/mobile-menu";
+import Menu from "../components/menu/menu";
+import MenuDesktop from "../components/menu/menu-desktop";
 
 export default function Home() {
-  const [isShow, setIsShow] = React.useState<boolean>(false);
-  const handleShowMobileMenu = () => {};
+  const [visible, setVisible] = React.useState<boolean>(false);
   return (
     <div>
       <Head>
@@ -27,8 +27,14 @@ export default function Home() {
             </svg>
           </Link>
 
-          <HamburgerButton />
-          <MobileMenu />
+          <MenuDesktop />
+          <HamburgerButton
+            onClick={(e: React.MouseEvent) => {
+              e.stopPropagation();
+              setVisible(!visible);
+            }}
+          />
+          <Menu isShow={visible} />
         </div>
       </header>
     </div>

@@ -30,6 +30,7 @@ ul {
 .inner-header {
   display: flex;
   align-items: center;
+  gap: 3rem;
 
   /* sementara */
   position: relative;
