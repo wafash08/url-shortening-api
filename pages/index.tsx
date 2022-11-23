@@ -37,6 +37,11 @@ export default function Home() {
           <Menu isShow={visible} />
         </div>
       </header>
+      <main>
+        <h1 className="text-3xl font-bold underline font-poppins">
+          Hello world!
+        </h1>
+      </main>
     </div>
   );
 }
